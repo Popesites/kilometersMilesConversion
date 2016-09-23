@@ -6,12 +6,14 @@
 #include <sstream>
 #include <string>
 
-using namespace std;
-int main() {
+ const float baseKilometer = 0.621,
+          baseMile = 1.61;
     
-    float baseKilometer = 0.621,
-          baseMile = 1.61,
-          userKilo,
+using namespace std;
+int main()
+{
+    
+     float userKilo,
           result,
           userMiles;
     char o;
