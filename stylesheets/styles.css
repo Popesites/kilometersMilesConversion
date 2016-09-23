@@ -16,12 +16,12 @@ html {
   
 }
 
-.form-container form,
-.form-container form div {
+.button-container form,
+.button-container form div {
     display: inline;
 }
 
-.form-container button {
+.button-container button {
     display: inline;
     vertical-align: middle;
 }
