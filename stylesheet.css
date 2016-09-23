@@ -4,7 +4,6 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align:center; /*Specify the alignment of the whole UL if UL is not width:100%;*/
     letter-spacing:normal;
-    padding-top: 15425px;
 }
 
 #ddmenu ul
@@ -22,6 +21,7 @@
     max-width:1400px;
 border:1px solid rgba(255,255,255,0.2);
 border-radius:4px;
+    padding-top: -15px;
 }
 
 #ddmenu li
