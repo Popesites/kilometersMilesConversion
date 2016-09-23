@@ -26,6 +26,9 @@ form {
     border-radius: 1em;
 }
 
+form div + div {
+    margin-top: 1em;
+}
 
 
 .button-container form,
