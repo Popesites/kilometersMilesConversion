@@ -4,6 +4,7 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align:center; /*Specify the alignment of the whole UL if UL is not width:100%;*/
     letter-spacing:normal;
+    padding-top: -15px;
 }
 
 #ddmenu ul
