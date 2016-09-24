@@ -25,6 +25,21 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+  <script>
+    function computeCalculation() {
+      var method = document.GetElementById("method").innerHTML;
+      var distance = document.GetElementById("distance").value;
+
+      if (method == "Kilometer") 
+          {method = 0.621;}
+      
+      else 
+       { method = 1.61;}
+       
+       var result = (method * distance);
+      document.GetElementById('payment').innerHTML = result;
+    }
+  </script>
   </head>
   <body>
     <div class="wrapper">
@@ -52,7 +67,7 @@
 <p>
       <label for="method">
         <span>Miles / Kilometers:</span>
-        <select id="method" name="usercard">
+        <select id="method" name="usercard" onchange="computeConversion()">
           <option value="miles">Miles</option>
           <option value="kilometers">Kilometers</option>
         </select>
@@ -61,15 +76,17 @@
        </div>
     	<div style ="display:inline-block;">
         <label for="Distance">Distance:</label>
-        <input type="text" id="distance" name="user_distance" />
+        <input type="number" id="distance" name="user_distance" onchange="computeConversion()" />
     </div>
     <div style ="display:inline-block;">
     	<div>
-    		<button type="submit">Input</button>
+    		<button id = "click" type="submit" onclick="computeConversion()">Input</button>
     	</div>
     </form>
     </div>
 </div>
+<h2 id ="payment"></h2>
+
 &nbsp;
 <div style = "display:inline-block">
 <h4 style = "display:inline-block">Kilometer:</h4>
