@@ -44,9 +44,11 @@
         else if (distanceTwo < 0) {
           document.getElementById('paymentTwo').innerHTML = "Invalid input, try again.";
         }
-        else
+        else {
           document.getElementById('paymentTwo').innerHTML = distanceTwo + " kilometers are equal to " + x + " miles.";
-    
+        }
+      }
+     }
     
     function computeConversion() {
       var method = document.getElementById("method").innerHTML;
