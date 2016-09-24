@@ -81,12 +81,24 @@
        </div>
     	<div style ="display:inline-block;">
         <label for="Distance">Distance:</label>
-        <input type="number" id="distance" name="user_distance" onchange="computeConversion()" />
+        <input type="number" id="distanceTwo" name="user_distance" onchange="computeConversionK()" />
     </div>
     <div style ="display:inline-block;">
-   
+<p>
+      <label for="method">
+        <span>Kilometers to Miles:</span>
+        <select id="methodTwo" name="usercard" onchange="computeConversion()">
+          <option value="miles">Kilometers</option>
+        </select>
+      </label>
+  </p>
+       </div>
+    	<div style ="display:inline-block;">
+        <label for="Distance">Distance:</label>
+        <input type="number" id="distanceTwo" name="user_distance" onchange="computeConversionK()" />
     </div>
 </div>
+        
 <h3 id ="payment"></h3>
 
 &nbsp;
