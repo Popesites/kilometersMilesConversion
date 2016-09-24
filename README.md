@@ -12,3 +12,5 @@ Useful to add this onto a website. Can be monitized through Google Adsense and p
 
 
 (UPDATE THURSDAY SEPTEMBER 22 6:50 PM) According to Kangbo this calculator can be done through JavaScript, and it may be wise to use JavaScript rather than C++. 
+
+Team effort.
