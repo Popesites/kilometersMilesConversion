@@ -7,10 +7,8 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-74303719-3', 'auto');
   ga('send', 'pageview');
-
 </script>
     
     <meta charset="utf-8">
@@ -29,7 +27,6 @@
     function computeConversion() {
       var method = document.getElementById("method").innerHTML;
       var distance = document.getElementById("distance").value;
-
       if (method = "Kilometer") 
           {method = 0.621371;}
       
@@ -66,7 +63,7 @@
 <p>
       <label for="method">
         <span>Miles / Kilometers:</span>
-        <select id="method" name="usercard">
+        <select id="method" name="usercard" onchange="computeConversion()">
           <option value="miles">Miles</option>
           <option value="kilometers">Kilometers</option>
         </select>
@@ -75,11 +72,9 @@
        </div>
     	<div style ="display:inline-block;">
         <label for="Distance">Distance:</label>
-        <input type="number" id="distance" name="user_distance"/>
+        <input type="number" id="distance" name="user_distance" onchange="computeConversion()" />
     </div>
     <div style ="display:inline-block;">
-          		<button onclick="computeConversion()">Input</button>
-
     </form>
     </div>
 </div>
