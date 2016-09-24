@@ -24,28 +24,28 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   <script>
-  //   function computeConversionK() {
-  //    var methodTwo = document.getElementById("methodTwo").innerHTML;
-  //    var distanceTwo = document.getElementById("distanceTwo").value;
-  //    if (methodTwo == "Mile")
-    //  {
-      //  methodTwo = 1.60934;
-   //   }
+     function computeConversionK() {
+      var methodTwo = document.getElementById("methodTwo").innerHTML;
+      var distanceTwo = document.getElementById("distanceTwo").value;
+      if (methodTwo == "Mile")
+      {
+        methodTwo = 1.60934;
+      }
       
- //     else {
-//        methodTwo = 0.621371;
+      else {
+        methodTwo = 0.621371;
       
-//        var resultTwo = (methodTwo * distanceTwo);
-//        var x = resultTwo.toFixed(2);
+        var resultTwo = (methodTwo * distanceTwo);
+        var x = resultTwo.toFixed(2);
         
-//        if (distanceTwo == 1) {
-//          document.getElementById('paymentTwo').innerHTML = distanceTwo + " kilometer is equal to " + x + " miles.";
-//        }
-//        else if (distanceTwo < 0) {
-//          document.getElementById('paymentTwo').innerHTML = "Invalid input, try again.";
-//        }
-//        else
- //         document.getElementById('paymentTwo').innerHTML = distanceTwo + " kilometers are equal to " + x + " miles.";
+        if (distanceTwo == 1) {
+          document.getElementById('paymentTwo').innerHTML = distanceTwo + " kilometer is equal to " + x + " miles.";
+                  }
+        else if (distanceTwo < 0) {
+          document.getElementById('paymentTwo').innerHTML = "Invalid input, try again.";
+        }
+        else
+          document.getElementById('paymentTwo').innerHTML = distanceTwo + " kilometers are equal to " + x + " miles.";
     
     
     function computeConversion() {
@@ -124,7 +124,7 @@
   </p>
        </div>
     	<div style ="display:inline-block;">
-        <label for="DistanceTwo">Distance:</label>
+        <label for="distanceTwo">Distance:</label>
         <input type="numberTwo" id="distanceTwo" name="user_distanceTwo" onchange="computeConversionK()" />
     </div>
         </div>
