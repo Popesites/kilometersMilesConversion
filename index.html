@@ -39,9 +39,13 @@
         if (distance == 1) {
       document.getElementById('payment').innerHTML = distance + " mile is equal to " + n + " kilometers.";
         }
+        else if (distance < 0) {
+                document.getElementById('payment').innerHTML = "Invalid input, try again.";
+        }
         else {
                 document.getElementById('payment').innerHTML = distance + " miles are equal to " + n + " kilometers.";
         }
+
       }
     }
   </script>
