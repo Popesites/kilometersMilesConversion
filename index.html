@@ -27,8 +27,8 @@
     <![endif]-->
   <script>
     function computeConversion() {
-      var method = document.GetElementById("method").innerHTML;
-      var distance = document.GetElementById("distance").value;
+      var method = document.getElementById("method").innerHTML;
+      var distance = document.getElementById("distance").value;
 
       if (method == "Kilometer") 
           {method = 0.621;}
@@ -37,7 +37,7 @@
        { method = 1.61;}
        
        var result = (method * distance);
-      document.GetElementById('payment').innerHTML = result;
+      document.getElementById('payment').innerHTML = result;
     }
   </script>
   </head>
